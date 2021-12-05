@@ -12,34 +12,31 @@
     const firstNumber = +prompt('Type first number');
  const secondNumber = +prompt('Type second number');
  const operator = prompt('Enter operator (either +, -, * or / ');
- const result = ('This is the result');
-  function resultOfCalculations(result){
-     if (operator == '+') {
-   alert(message='firstNumber + secondNumber');
+ const result =('This is the result');
+  function addition(firstNumber, secondNumber){
+    return result=firstNumber+secondNumber ;
+}
+      
+function subtraction(firstNumber,secondNumber){
+   return result=firstNumber-secondNumber ;
 }
 
-else if (operator == '-') {
-  alert(message='firstNumber-secondNumber');
-}
-else if (operator == '*') {
-    alert(message='firstNumber * secondNumber');
+function multiplication(firstNumber,secondNumber){
+    
+    return result=firstNumber*secondNumber ;
     
 }
-
-else if (operator == '/') {
-   alert(message='firstNumber / secondNumber');
-   
+function segmentation(firstNumber, secondNumber){
+    
+     return result=firstNumber/secondNumber;
 }
 
-
-else if (secondNumber === null) {
-    alert("invalid expression");
-    return result;
+if(answer ==='+'){
+    alert(addition(firstNumber,secondNumber));
 }
-  }
-  
-alert(result);
-console.log(result);
+}
+alert(addition);
+console.log(addition);
     </script>
 </body>
-    </html>
+ </html>
