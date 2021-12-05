@@ -20,15 +20,6 @@
       
 function subtraction(firstNumber,secondNumber){
    return result=firstNumber-secondNumber ;
-=======
-const firstNumber = +prompt(`Enter first number`);
-const secondNumber = +prompt(`Enter second number`);
-const operator = prompt(`Choose the operator '+', '-', '*', '/'`);
- /*const result = ('This is the result');*/
-  function resultOfCalculations(result){
-     if (operator == '+') {
-   alert(message='firstNumber + secondNumber');
->>>>>>> 6760ff4069883c56a8164eab867fab58cbfee53f
 }
 
 function multiplication(firstNumber,secondNumber){
@@ -36,17 +27,23 @@ function multiplication(firstNumber,secondNumber){
     return result=firstNumber*secondNumber ;
     
 }
-function segmentation(firstNumber, secondNumber){
+function division(firstNumber, secondNumber){
     
      return result=firstNumber/secondNumber;
 }
 
-if(answer ==='+'){
+
+if (operator ==='+') {
     alert(addition(firstNumber,secondNumber));
-}
-}
-alert(addition);
-console.log(addition);
+    } else if (operator ==='-') {
+        alert(subtraction(firstNumber,secondNumber));
+    } else if (operator ==='*') {
+        alert(multiplication(firstNumber,secondNumber));
+    } else if (operator ==='/') {
+        alert(division(firstNumber,secondNumber));
+    }
+
+console.log(result);
     </script>
 </body>
  </html>
